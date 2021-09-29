@@ -1,0 +1,2 @@
+Sitemap: https://branch-preview-com.3dcartstores.com/sitemap.xml
+#Disallowallcrawlersaccesstocertainpages.SSLUser-agent:*Disallow:/Disallow:/admin/Disallow:/apple-app-site-association
