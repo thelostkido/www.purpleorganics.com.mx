@@ -710,24 +710,34 @@
 
 <script type="text/javascript">var _cart_secure_url = "index.html"</script>
 <script>var refEncoded = encodeURIComponent(document.referrer);(new Image()).src = 'https://branch-preview-com.3dcartstores.com/3dvisit.asp?setReferer='+refEncoded</script>
-<!-- GetButton.io widget -->
-<script type="text/javascript">
-	(function () {
-		var options = {
-			facebook: "503057046508692", // Facebook page ID
-			whatsapp: "16042600497", // WhatsApp number
-			call_to_action: "Message us", // Call to action
-			button_color: "#FF6550", // Color of button
-			position: "right", // Position may be 'right' or 'left'
-			order: "facebook,whatsapp", // Order of buttons
-		};
-		var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-		s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-		var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-	})();
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "104614991982020");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v12.0'
+	});
+  };
+
+  (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 </script>
-<!-- /GetButton.io widget -->
+
 
 </body>
 </html>
